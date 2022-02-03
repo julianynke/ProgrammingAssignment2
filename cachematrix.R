@@ -13,6 +13,7 @@ makeCacheMatrix <- function(x = matrix()) {
   
   # Define the functions to set and get the matrix.
   set <- function(y) {
+    # Assign value to the variables x and inv.
     x <<- y
     inv <<- NULL
   }
@@ -54,5 +55,3 @@ cacheSolve <- function(x, ...) {
   x$set_inv(inv)
   inv
 }
-
-
